@@ -2,6 +2,7 @@ import React from 'react';
 import GeneralForm from './components/GeneralForm.js';
 import EduForm from './components/EduForm.js';
 import ExpForm from './components/ExpForm.js';
+import './styles/App.css';
 
 class App extends React.Component {
   constructor() {

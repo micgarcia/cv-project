@@ -95,9 +95,9 @@ class ExpForm extends React.Component {
 
     if (hidden) {
       return (
-        <div>
+        <div className='expContHidden'>
           {<ExpInfo info={info}/>}
-          <button onClick={this.editExp}>Edit Practical Experience Information</button>
+          <button onClick={this.editExp}>Edit</button>
         </div>
       )
     } else {
@@ -141,7 +141,7 @@ class ExpForm extends React.Component {
               onChange={this.endChange}
             />
             <button type="submit">
-              Submit Practical Experience Information
+              Submit
             </button>
           </form>
           {<ExpInfo info={info}/>}

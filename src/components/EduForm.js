@@ -70,10 +70,10 @@ class EduForm extends React.Component {
 
     if (hidden) {
       return (
-        <div>
+        <div className="eduContHidden">
           {console.log(hidden)}
           {<EduInfo info={info}/>}
-          <button onClick={this.editEdu}>Edit Education Information</button>
+          <button onClick={this.editEdu}>Edit</button>
         </div>
       )
     } else {
@@ -103,7 +103,7 @@ class EduForm extends React.Component {
              onChange={this.dateChange}
              />
              <button type="submit">
-              Submit Education Information
+              Submit
              </button>
           </form>
           {<EduInfo info={info}/>}

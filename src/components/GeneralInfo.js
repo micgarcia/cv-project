@@ -2,8 +2,25 @@ import React from 'react';
 
 class GeneralInfo extends React.Component {
   constructor(props) {
-    super();
-  }
+    super(props);
+
+    console.log(props)
+
+    this.state = {
+      props
+    }
+
+    console.log(this.state);
+  };
+
+  /*
+  prepInfo = () => {
+    this.setState({
+      info : {
+        name : 'Name: ' + this.state.name,
+      }
+    })
+  }*/
 
   render() {
 

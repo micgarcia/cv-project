@@ -1,0 +1,265 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+  =============
+  CV Container
+  =============
+*/
+
+body {
+  height: 100vh;
+}
+
+#root, .App {
+  height: 100%;
+}
+
+b {
+  font-weight: bold;
+}
+
+.cvCont {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 600px;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+  =============
+  General Container
+  =============
+*/
+
+.generalCont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 2fr;
+  justify-items: center;
+}
+
+#generalTitle {
+  padding-left: 3em;
+}
+
+#generalForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr) 30px;
+  align-items: center;
+  row-gap: 1em;
+}
+
+#generalForm > input {
+  height: 20px;
+  width: 200px;
+}
+
+#generalForm > label {
+  justify-self: right;
+  padding-right: 1em;
+}
+
+#generalForm > button {
+  grid-column: 2 / 3;
+  width: 70px;
+  height: 23px;
+  justify-self: center;
+}
+
+.generalContHidden {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40px;
+}
+
+#generalInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 1em;
+}
+
+.generalContHidden > button{
+  width: 70px;
+  height: 23px;
+  justify-self: center;
+  align-self: center;
+}
+
+/*
+  =============
+  Education Container
+  =============
+*/
+
+.eduCont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 2fr;
+  justify-items: center;
+}
+
+#eduTitle {
+  padding-left: 3em;
+}
+
+#eduForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr) 30px;
+  align-items: center;
+  row-gap: 1em;
+}
+
+#eduForm > input {
+  height: 20px;
+  width: 200px;
+}
+
+#eduForm > label {
+  justify-self: right;
+  padding-right: 1em;
+}
+
+#eduForm > button {
+  grid-column: 2 / 3;
+  width: 70px;
+  height: 23px;
+  justify-self: center;
+  margin: 1em;
+}
+
+.eduContHidden {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40px;
+}
+
+#eduInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 1em;
+}
+
+.eduContHidden > button{
+  width: 70px;
+  height: 23px;
+  justify-self: center;
+  align-self: center;
+}
+
+
+/*
+  =============
+  Experience Container
+  =============
+*/
+
+.expCont {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px 2fr;
+  justify-items: center;
+}
+
+#expTitle {
+  padding-left: 3em;
+}
+
+#expForm {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(5, 1fr) 30px;
+  align-items: center;
+  row-gap: 1em;
+}
+
+#expForm > input {
+  height: 20px;
+  width: 200px;
+}
+
+#expForm > label {
+  justify-self: right;
+  padding-right: 1em;
+}
+
+#expForm > button {
+  grid-column: 2 / 3;
+  width: 70px;
+  height: 23px;
+  justify-self: center;
+}
+
+.expContHidden {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 40px;
+}
+
+#expInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  row-gap: 1em;
+}
+
+.expContHidden > button{
+  width: 70px;
+  height: 23px;
+  justify-self: center;
+  align-self: center;
+}

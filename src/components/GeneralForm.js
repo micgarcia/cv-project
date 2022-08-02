@@ -71,10 +71,9 @@ class GeneralForm extends React.Component {
 
     if (hidden) {
       return (
-        <div>
-          {console.log(hidden)}
+        <div className="generalContHidden">
           {<GeneralInfo info={info}/>}
-          <button onClick={this.editGeneral}>Edit General Information</button>
+          <button onClick={this.editGeneral}>Edit</button>
         </div>
       )
     } else {
@@ -104,7 +103,7 @@ class GeneralForm extends React.Component {
               onChange={this.phoneChange}
             />
             <button type="submit">
-              Submit General Information
+              Submit
             </button>
           </form>
           {<GeneralInfo info={info}/>}
