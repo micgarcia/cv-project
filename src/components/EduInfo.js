@@ -8,9 +8,9 @@ class EduInfo extends React.Component {
   render() {
     return (
       <div id="eduInfo">
-        <div>{this.props.info.school}</div>
-        <div>{this.props.info.major}</div>
-        <div>{this.props.info.date}</div>
+        <div>School: {this.props.info.school}</div>
+        <div>Major: {this.props.info.major}</div>
+        <div>Graduation Year: {this.props.info.date}</div>
       </div>
     );
   };

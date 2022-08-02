@@ -16,9 +16,9 @@ class GeneralInfo extends React.Component {
 
     return (
       <div id="generalInfo">
-        <div>{this.props.info.name}</div>
-        <div>{this.props.info.email}</div>
-        <div>{this.props.info.phone}</div>
+        <div>Name: {this.props.info.name}</div>
+        <div>Email: {this.props.info.email}</div>
+        <div>Phone: {this.props.info.phone}</div>
       </div>
     );
   };

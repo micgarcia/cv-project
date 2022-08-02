@@ -8,11 +8,11 @@ class ExpInfo extends React.Component {
   render() {
     return (
       <div id="expInfo">
-        <div>{this.props.info.company}</div>
-        <div>{this.props.info.position}</div>
-        <div>{this.props.info.tasks}</div>
-        <div>{this.props.info.start}</div>
-        <div>{this.props.info.end}</div>
+        <div>Company: {this.props.info.company}</div>
+        <div>Position: {this.props.info.position}</div>
+        <div>Tasks: {this.props.info.tasks}</div>
+        <div>Start Date: {this.props.info.start}</div>
+        <div>End Date: {this.props.info.end}</div>
       </div>
     );
   };

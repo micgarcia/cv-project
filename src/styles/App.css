@@ -205,6 +205,10 @@ b {
 
 }
 
+.generalCont > #generalInfo {
+  display: none;
+}
+
 .generalContHidden > button{
   width: 70px;
   height: 26px;
@@ -324,6 +328,10 @@ b {
   padding: 50px;
   border-radius: 4px;
   box-shadow: 1px 1px 2px #657884;
+}
+
+.eduCont > #eduInfo {
+  display: none;
 }
 
 .eduContHidden > button{
@@ -446,6 +454,10 @@ b {
   padding: 50px;
   border-radius: 4px;
   box-shadow: 1px 1px 2px #657884;
+}
+
+.expCont > #expInfo {
+  display: none;
 }
 
 .expContHidden > button{
