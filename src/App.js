@@ -1,5 +1,7 @@
 import React from 'react';
 import GeneralForm from './components/GeneralForm.js';
+import EduForm from './components/EduForm.js';
+import ExpForm from './components/ExpForm.js';
 
 class App extends React.Component {
   constructor() {
@@ -19,7 +21,9 @@ class App extends React.Component {
     return (
       <div className="App">
         <div className="cvCont">
-          <GeneralForm handler = {this.handler}/>
+          <GeneralForm/>
+          <EduForm/>
+          <ExpForm/>
         </div>
 
       </div>
