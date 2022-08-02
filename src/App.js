@@ -20,8 +20,10 @@ class App extends React.Component {
   render() {
 
     return (
+
       <div className="App">
         <div className="cvCont">
+          <div className="title">CV Builder</div>
           <GeneralForm/>
           <EduForm/>
           <ExpForm/>

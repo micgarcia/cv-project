@@ -49,8 +49,11 @@ table {
   =============
 */
 
+html {
+  min-height: 100vh;
+}
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 #root, .App {
@@ -61,13 +64,43 @@ b {
   font-weight: bold;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+.App {
+  background-color: #F0F5F9;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 900px 50px;
+  justify-items: center;
+
+  font-family: 'Uchen', serif;
+
+}
+
 .cvCont {
+  grid-row: 2 / 3;
   height: 100%;
+  width: 600px;
   display: grid;
   grid-template-columns: 600px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 60px repeat(3, 1fr);
+  justify-items: center;
   justify-content: center;
   align-items: center;
+
+
+  background-color: #C9D6DF;
+  border-style: solid;
+  border-color: rgb(108, 108, 108);
+  border-width: 1px;
+  box-shadow: 2px 2px 2px rgb(108, 108, 108);
+
+  color: #1E2022;
+}
+
+
+.title {
+  font-size: 28px;
 }
 
 /*
@@ -79,17 +112,21 @@ b {
 .generalCont {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 30px 2fr;
+  grid-template-rows: 40px 2fr;
   justify-items: center;
+
+  padding-right: 3em;
+
 }
 
 #generalTitle {
   padding-left: 3em;
+  font-size: 20px;
 }
 
 #generalForm {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 140px 208px;
   grid-template-rows: repeat(3, 1fr) 30px;
   align-items: center;
   row-gap: 1em;
@@ -98,40 +135,98 @@ b {
 #generalForm > input {
   height: 20px;
   width: 200px;
+
+  background-color: #F0F5F9;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #1E2022;
+  border-radius: 4px;
+
+  font-family: 'Uchen', serif;
+
+}
+
+#generalForm > input:focus {
+  outline-style: none;
 }
 
 #generalForm > label {
   justify-self: right;
   padding-right: 1em;
+  font-size: 16px;
 }
 
 #generalForm > button {
   grid-column: 2 / 3;
   width: 70px;
-  height: 23px;
+  height: 26px;
   justify-self: center;
+
+
+  background-color: #52616B;
+  color: #F0F5F9;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 4px;
+
+  transition: background-color 0.25s ease-in,
+   color 0.25s ease-out;
+
+  font-family: 'Uchen', serif;
+  font-size: 14px;
+
+}
+
+#generalForm > button:hover {
+  background-color: #e8ecef;
+  color: #52616B;
+  cursor: pointer;
 }
 
 .generalContHidden {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 40px;
+  grid-template-rows: 1fr 60px;
 }
 
-#generalInfo {
+.generalContHidden > #generalInfo {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  justify-items: center;
+  justify-items: start;
   align-items: center;
   row-gap: 1em;
+
+  background-color: #F0F5F9;
+  width: 300px;
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #657884;
+
 }
 
 .generalContHidden > button{
   width: 70px;
-  height: 23px;
+  height: 26px;
   justify-self: center;
   align-self: center;
+
+  background-color: #52616B;
+  color: #F0F5F9;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 4px;
+
+  font-family: 'Uchen', serif;
+  font-size: 14px;
+  transition: background-color 0.25s ease-in,
+   color 0.25s ease-out;
+}
+
+.generalContHidden > button:hover {
+  background-color: #e8ecef;
+  color: #52616B;
+  cursor: pointer;
 }
 
 /*
@@ -143,17 +238,20 @@ b {
 .eduCont {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 30px 2fr;
+  grid-template-rows: 40px 2fr;
   justify-items: center;
+
+  padding-right: 3em;
 }
 
 #eduTitle {
   padding-left: 3em;
+  font-size: 20px;
 }
 
 #eduForm {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 140px 208px;
   grid-template-rows: repeat(3, 1fr) 30px;
   align-items: center;
   row-gap: 1em;
@@ -162,41 +260,94 @@ b {
 #eduForm > input {
   height: 20px;
   width: 200px;
+  background-color: #F0F5F9;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #1E2022;
+  border-radius: 4px;
+
+  font-family: 'Uchen', serif;
+
+}
+
+#eduForm > input:focus {
+  outline-style: none;
 }
 
 #eduForm > label {
   justify-self: right;
   padding-right: 1em;
+  font-size: 16px;
 }
 
 #eduForm > button {
   grid-column: 2 / 3;
   width: 70px;
-  height: 23px;
+  height: 26px;
   justify-self: center;
-  margin: 1em;
+
+  background-color: #52616B;
+  color: #F0F5F9;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 4px;
+
+  font-family: 'Uchen', serif;
+  font-size: 14px;
+  transition: background-color 0.25s ease-in,
+   color 0.25s ease-out;
+
+}
+
+#eduForm > button:hover {
+  background-color: #e8ecef;
+  color: #52616B;
+  cursor: pointer;
 }
 
 .eduContHidden {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 40px;
+  grid-template-rows: 1fr 60px;
 }
 
-#eduInfo {
+.eduContHidden > #eduInfo {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  justify-items: center;
+  justify-items: start;
   align-items: center;
   row-gap: 1em;
+
+  background-color: #F0F5F9;
+  width: 300px;
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #657884;
 }
 
 .eduContHidden > button{
   width: 70px;
-  height: 23px;
+  height: 26px;
   justify-self: center;
   align-self: center;
+
+  background-color: #52616B;
+  color: #F0F5F9;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 4px;
+
+  font-family: 'Uchen', serif;
+  font-size: 14px;
+  transition: background-color 0.25s ease-in,
+   color 0.25s ease-out;
+}
+
+.eduContHidden > button:hover {
+  background-color: #e8ecef;
+  color: #52616B;
+  cursor: pointer;
 }
 
 
@@ -209,17 +360,21 @@ b {
 .expCont {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 30px 2fr;
+  grid-template-rows: 40px 2fr;
   justify-items: center;
+
+  padding-right: 3em;
+  padding-top: 20px;
 }
 
 #expTitle {
   padding-left: 3em;
+  font-size: 20px;
 }
 
 #expForm {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 140px 208px;
   grid-template-rows: repeat(5, 1fr) 30px;
   align-items: center;
   row-gap: 1em;
@@ -228,38 +383,91 @@ b {
 #expForm > input {
   height: 20px;
   width: 200px;
+  background-color: #F0F5F9;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #1E2022;
+  border-radius: 4px;
+
+  font-family: 'Uchen', serif;
+
+}
+
+#expForm > input:focus {
+  outline-style: none;
 }
 
 #expForm > label {
   justify-self: right;
   padding-right: 1em;
+  font-size: 16px;
 }
 
 #expForm > button {
   grid-column: 2 / 3;
   width: 70px;
-  height: 23px;
+  height: 26px;
   justify-self: center;
+
+  background-color: #52616B;
+  color: #F0F5F9;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 4px;
+
+  font-family: 'Uchen', serif;
+  font-size: 14px;
+  transition: background-color 0.25s ease-in,
+  color 0.25s ease-out;
+}
+
+#expForm > button:hover {
+  background-color: #e8ecef;
+  color: #52616B;
+  cursor: pointer;
 }
 
 .expContHidden {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 40px;
+  grid-template-rows: 1fr 60px;
 }
 
-#expInfo {
+.expContHidden > #expInfo {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
-  justify-items: center;
+  justify-items: start;
   align-items: center;
   row-gap: 1em;
+
+  background-color: #F0F5F9;
+  width: 300px;
+  padding: 50px;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #657884;
 }
 
 .expContHidden > button{
   width: 70px;
-  height: 23px;
+  height: 26px;
   justify-self: center;
   align-self: center;
+
+  background-color: #52616B;
+  color: #F0F5F9;
+  border-style: none;
+  border-width: 1px;
+  border-radius: 4px;
+
+  font-family: 'Uchen', serif;
+  font-size: 14px;
+  transition: background-color 0.25s ease-in,
+   color 0.25s ease-out;
+}
+
+.expContHidden > button:hover {
+  background-color: #e8ecef;
+  color: #52616B;
+  cursor: pointer;
 }

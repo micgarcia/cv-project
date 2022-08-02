@@ -79,7 +79,7 @@ class EduForm extends React.Component {
     } else {
       return (
         <div className="eduCont">
-          <div id="eduTitle">Enter Education Information Below</div>
+          <div id="eduTitle">Enter Education Information Below:</div>
           <form onSubmit={this.onSubmitEdu} id="eduForm">
             <label htmlFor="schoolInput">School:</label>
             <input
